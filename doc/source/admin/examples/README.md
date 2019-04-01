@@ -19,7 +19,7 @@ to get users and keys set up.
 Clone the Ansible project from Gerrit (this ensures your .gitreview and
 remotes are setup correctly for Gerrit.)
 
-`git clone http://localhost:8080/anisble`
+`git clone http://localhost:8080/ansible`
 
 Pull upstream into the new repo.
 
