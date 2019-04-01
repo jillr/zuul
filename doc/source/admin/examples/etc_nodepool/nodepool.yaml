@@ -10,7 +10,13 @@ providers:
     pools:
       - name: main
         nodes:
-          - name: node
+            # Static instance with required libs for talking to esxi. In this case a bionic libvirt instance was used.
+            # Long term a new docker image that contains the required tools (c|sh)ould be built
+          - name: 192.168.122.232
             labels: ubuntu-bionic
-            host-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDZ9C89nUVGQ1qZzG/X0onkmcju4kWJ2uTLBdIXsy1"
+            host-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICWFPDiNnsTEc+T/v6Q9OkbgxX/MrKtIo941nOiQRVAq"
             username: root
+#          - name: node
+#            labels: ubuntu-bionic
+#            host-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDZ9C89nUVGQ1qZzG/X0onkmcju4kWJ2uTLBdIXsy1"
+#            username: root

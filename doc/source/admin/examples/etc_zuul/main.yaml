@@ -7,6 +7,7 @@
         untrusted-projects:
           - test1
           - test2
+          - ansible
       zuul-ci.org:
         untrusted-projects:
           - zuul-jobs:
